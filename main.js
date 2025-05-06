@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Reusable Typewriter Function with Loop Limit
-  const typeWriter = (element, text, speed = 100, pause = 2000, maxLoops = 5) => {
+  const typeWriter = (element, text, speed = 100, pause = 2000, maxLoops = 3) => {
     let index = 0;
     let loopCount = 0;
 
@@ -105,6 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize typewriter effect for each configured element
   typewriterConfigs.forEach(({ element, text }) => {
-    if (element) typeWriter(element, text, 100, 2000, 5);
+    if (element) typeWriter(element, text, 100, 2000, 3);
   });
 });
